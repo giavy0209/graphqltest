@@ -8,12 +8,11 @@ input Sort {
   lastLogin : Int,
   createdAt : Int
 }
-union StringOrNumber = String | Int
 
 type Users {
   create(username : String , password : String, roles : [String]) : String,
   login(username : String , password : String, roles : [String]) : String,
-  read (skip : Int, limit : Int, lastLogin : StringOrNumber , createdAt : StringOrNumber  , sort : Sort): [UserData]
+  read (skip : Int, limit : Int, lastLogin : String , createdAt : String  , sort : Sort): [UserData]
 }`
 
 export default userSchema

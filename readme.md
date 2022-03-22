@@ -19,8 +19,8 @@ user : {
     read : lấy user, - Arguments : {
         skip default = 0 , 
         limit default = 10, 
-        lastLogin : valid Date String || Number mặc định null, 
-        createdAt : valid Date String || Number mặc định null, 
+        lastLogin : valid Date String mặc định null, 
+        createdAt : valid Date String mặc định null, 
         sort {
             createdAt : 1 (tăng dần)hoặc -1(giảm dần) default = 1, 
             lastLogin 1 (tăng dần) hoặc -1(giảm dần) , default = 1
